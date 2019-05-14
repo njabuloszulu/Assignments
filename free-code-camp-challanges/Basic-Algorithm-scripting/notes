@@ -1,0 +1,15 @@
+is there enough space.
+
+function enough(cap, on, wait) {
+  // your code here
+ let p = on + wait - cap
+ return p < 0 ? 0:p
+ }
+
+ function enough(cap, on, wait) {
+  if (on + wait < cap){
+  return 0;
+  } else {
+  return (on + wait) - cap;
+  }
+}
